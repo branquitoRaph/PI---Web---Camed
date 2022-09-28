@@ -53,6 +53,16 @@ endif;
 		<label for = "fdata"><br>Data de Nascimento</label>
 		<!--- Campo de Digitação-->
 		<input type = "date" id = "fdata" name = "data" placeholder = "Informe sua data de nascimento"><br><br>
+		<!-- Texto que aparece-->
+		<label for = "pwd"><br>Senha:</label>
+		<!-- Campo de digitação-->
+		<input type = "password" id = "pwd" name = "senha" minlength = "8" placeholder = "Digite uma senha"><br><br>
+		<!-- Subtítulo com tamanho em h2-->
+		<h2>Dados de contato e endereço</h2>
+		<!-- Texto que aparece-->
+		<label for = "fradio">Tipo de contato:</label>
+		<!-- Campo de digitação-->
+		<input type = "radio" id  = "fradio" name = "tipo" placeholder = "Escolha o tipo de contato"><br><br>
 	<!-- Fechando o formulário-->
 	</form>
 <!-- Chamando o rodapé-->

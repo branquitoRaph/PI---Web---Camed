@@ -60,9 +60,17 @@ endif;
 		<!-- Subtítulo com tamanho em h2-->
 		<h2>Dados de contato e endereço</h2>
 		<!-- Texto que aparece-->
-		<label for = "fradio">Tipo de contato:</label>
-		<!-- Campo de digitação-->
-		<input type = "radio" id  = "fradio" name = "tipo" placeholder = "Escolha o tipo de contato"><br><br>
+		<p>Tipo de Contato: </p>
+		<input type = "checkbox" id = "campo" name = "email">
+		<label for = "email">E-mail</label>
+		<input type = "checkbox" id = "campo" name = "numero">
+		<label for = "numero">Número de celular</label>
+		<input type = "checkbox" id = "campo" name = "facebook">
+		<label for = "facebook">Facebook</label>
+		<input type = "checkbox" id = "campo" name = "instagram">
+		<label for = "instagram">Instagram</label>
+		<input type = "checkbox" id = "campo" name = "telefone">
+		<label for = "telefone">Telefone</label>
 	<!-- Fechando o formulário-->
 	</form>
 <!-- Chamando o rodapé-->

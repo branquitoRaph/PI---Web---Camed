@@ -1,0 +1,327 @@
+html {
+	height: 100%;
+}
+
+/* Estilo do body (corpo) */
+body {
+	margin: 0;
+	padding: 0;
+	font: 85% arial, hevetica, sans-serif;
+	text-align: center;
+	color: #696969;
+	background: #696969 url(img_39.gif) repeat 0 0;
+	background-color: #FFFFFF;
+	min-height: 100%;
+}
+
+/* Define a altura minima e a posição de nosso footer */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+/* Estilo dos links */
+a:link { color: #696969; }
+a:visited { color: #696969; }
+a:focus { color: #000; }
+a:hover { color: #5F9EA0; }
+a:active { color: red; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+/* Estilo mini menu (cabeçalho) */
+#miniMenu {
+	background: #63B8FF;
+	color: #63B8FF;
+	padding: 15px 0;
+	margin-bottom: 22px;
+	text-align: left;
+}
+
+/* Estilo lista mini menu (cabeçalho) */
+#miniMenu ul {
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	border-left: 1px solid #C4C769;
+	height: auto;
+}
+
+/* Estilo linha mini menu (cabeçalho) */
+#miniMenu li {
+	display: inline;
+	padding: 0 10px;
+	border-right: 1px solid #C4C769;
+	font-size: 15px;
+}
+/* Estilo link linha mini menu (cabeçalho) */
+#miniMenu li a {
+	text-decoration: none;
+	color: #272900;
+}
+
+/* Estilo menu notícias */
+#menu {
+	float: right;
+	width: 150px;
+	/*border-left: 2px solid #000000;*/
+	margin-right:5px;
+	padding-left: 15px;
+}
+
+/* Estilo lista menu notícias */
+#menu ul {
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Estilo linha lista menu notícias */
+#menu ul li {
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Estilo principal */
+
+#contents {
+	width: auto;
+	margin: auto;
+	margin-top: 22px;
+	}
+
+/*Estilo do campo de pesquisa*/
+#divBusca{
+  display: flex;
+  align-items: center;
+  background-color:#FFFFFF;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:220px;
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:63px;
+  font-weight:bold;
+  background:#5F9EA0;
+  cursor: pointer;
+}
+
+#divBusca img{
+  float:left;
+  width: 23px; 
+  height: 23px;
+}
+
+/* Estilo dos parágrafos da principal */
+#contents p { 
+	line-height: 165%; 
+}
+
+.imagefloat {
+	float: right;
+	padding: 2px;
+	border: 1px solid #9FA41D;
+	margin: 0 0 10px 10px;
+}
+
+/* Estilo das imagens na principal */
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Estilo da parte dos sintomas (na principal) */
+
+#sintomas {
+	float: auto;
+	width: auto;
+	padding-left: 15px;
+}
+
+/* Estilo da lista de sintomas */
+#sintomas ul {
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Estilo da linha da lista de sintomas */
+#sintomas ul li {
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Estilo h1 */
+h1 {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: #27408B;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Estilo h1 (link) */
+h1 a { text-decoration: none; }
+
+/* Estilo h2 */
+h2 {
+	color: #27408B;
+	font: 150% georgia, times, "times new roman", serif;
+	margin-left: 10px;
+}
+
+/* Estilo parágrafo dos sintomas */
+p {
+}
+
+/* Estilo dos inputs (entradas) */
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel], input[type=number] {
+	width: 200px;
+	padding: 4px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #63B8FF;
+	outline-color: #AFEEEE;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus {
+	background-color: #e6fff7;
+}
+
+/* Estilo do botão de enviar */
+input[type=submit] {
+	border-radius: 10px 20px 30px;
+	background-color: #27408B;
+	border: none;
+	color: white;
+	padding: 8px 14px;
+	margin: 4px 2px;
+	: pointer;
+}
+
+/* Estilo do rodapé */
+
+#footer {
+	clear: both;
+	color: #000000;
+	text-align: right;
+	width: 100%;
+	font-size: 90%;
+	background-color: #63B8FF;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0;
+}
+
+/* Estilo do rodapé 2 */
+
+#footer2 {
+	clear: both;
+	color: #000000;
+	text-align: right;
+	width: 100%;
+	font-size: 90%;
+	background-color: #63B8FF;
+	padding: 5px 0;
+	margin-top: auto;
+}
+
+/* Cor para marcação de sua página */
+
+.preto{
+	color: #000000;
+}
+
+.linha-vertical {
+  height: 830px;/*Altura da linha*/
+  border-left: 2px solid #000000;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  position: absolute;
+  right: 160px;
+  margin-bottom: 0px;
+}
+
+.logo {
+	height: 200px;
+	width: 400px;
+	margin-top: 5px;
+}
+
+/* Faz o estilo da tabela inteira. */
+.table{
+   background: #AEDAFD;
+   border-color: #c1e3fd;
+   border-style: outset; 
+   height: 700px;
+   width: 1000px;
+}
+
+/* Faz o estilo da tabela inteira. */
+.table2{
+   background: #AEDAFD;
+   border-color: #c1e3fd;
+   border-style: outset; 
+   height: 200px;
+   width: 500px;
+}
+
+/* estilo para as linhas. */
+tr{
+   text-align: center;
+}
+
+/*estilo para as células do cabeçalho. */
+th{
+   background: #274863;
+   color: white;
+}
+
+/*estilo das celulas com o auxilio de uma classe. */
+td .esquerda{
+   text-align: left;
+}
+
+/*estilo das celulas com o auxilio de uma classe. */
+td .centro{
+   text-align: center;
+}
+
+/*estilo das celulas com o auxilio de uma classe. */
+td .direita{
+   text-align: right;
+}
+
+/*estilo da ´página gerenciamento de conta*/
+.display{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	flex-wrap: wrap
+}
+
+.display input{
+	display: block;
+	border-radius: 25px;
+	border: 3px solid #AEDAFD;
+	width: 75%;
+	height: 50px;
+	text-align: center;
+	font-size:18px;
+	margin-top: 10px
+}
+

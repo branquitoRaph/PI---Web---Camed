@@ -57,7 +57,7 @@ endif;
 		<label for = "pwd"><br>Senha:</label>
 		<!-- Campo de digitação-->
 		<input type = "password" id = "pwd" name = "senha" minlength = "8" placeholder = "Digite uma senha"><br><br>
-<h2>Dados de contato</h2>
+		<h2>Dados de contato</h2>
 		<!-- Texto que aparece-->
 		<p>Preencha ao menos um tipo de contato: </p>
 		<!-- Texto que aparece-->

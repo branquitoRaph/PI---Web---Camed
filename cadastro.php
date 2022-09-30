@@ -57,20 +57,33 @@ endif;
 		<label for = "pwd"><br>Senha:</label>
 		<!-- Campo de digitação-->
 		<input type = "password" id = "pwd" name = "senha" minlength = "8" placeholder = "Digite uma senha"><br><br>
-		<!-- Subtítulo com tamanho em h2-->
-		<h2>Dados de contato e endereço</h2>
+<h2>Dados de contato</h2>
 		<!-- Texto que aparece-->
-		<p>Tipo de Contato: </p>
-		<input type = "checkbox" id = "campo" name = "email">
-		<label for = "email">E-mail</label>
-		<input type = "checkbox" id = "campo" name = "numero">
-		<label for = "numero">Número de celular</label>
-		<input type = "checkbox" id = "campo" name = "facebook">
-		<label for = "facebook">Facebook</label>
-		<input type = "checkbox" id = "campo" name = "instagram">
-		<label for = "instagram">Instagram</label>
-		<input type = "checkbox" id = "campo" name = "telefone">
-		<label for = "telefone">Telefone</label>
+		<p>Preencha ao menos um tipo de contato: </p>
+		<!-- Texto que aparece-->
+		<label for = "email">E-mail:</label>
+		<!-- Campo de digitação-->
+		<input type = "email" id = "campo" name = "email"><br><br>
+		<!-- Texto que aparece-->
+		<label for = "numero">Número de celular:</label>
+		<!-- Campo de digitação-->
+		<input type = "tel" id = "campo" name = "numero"><br><br>
+		<!-- Texto que aparece-->
+		<label for = "facebook">Facebook:</label>
+		<!-- Campo de digitação -->
+		<input type = "text" id = "campo" name = "facebook"><br><br>
+		<!-- Texto que aparece -->
+		<label for = "instagram">Instagram:</label>
+		<!-- Campo de digitação -->
+		<input type = "text" id = "campo" name = "instagram"><br><br>
+		<!-- Texto que aparece -->
+		<label for = "telefone">Telefone:</label>
+		<!-- Campo de digitação -->
+		<input type = "tel" id = "campo" name = "telefone"><br><br><br><br>
+		<!-- Subtítulo com tamanho em h2-->
+		<h2>Dados de endereço</h2>
+		<!-- Texto que aparece -->
+		<label for = "
 	<!-- Fechando o formulário-->
 	</form>
 <!-- Chamando o rodapé-->

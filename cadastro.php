@@ -1,90 +1,85 @@
-<?php
-//Iniciar  Sessão
-session_start();
-//Conexão
-require_once 'conexao.php';
-//Se existir o "Enviar" , é porque clicaram no botão
-if(isset($_POST['Enviar'])):
-	//Limpa os dados dos campos e envia pelo método POST para o arquivo de conexão
-	$nome=mysqli_escape_string($conexao,$_POST['nome']);
-	$sobrenome=mysqli_escape_string($conexao,$_POST['sobrenome']);
-	$email=mysqli_escape_string($conexao,$_POST['email']);
-	$cep=mysqli_escape_string($conexao,$_POST['cep']);
-	//Senha criptografada com o MD5
-	$senha=md5(mysqli_escape_string($conexao,$_POST['senha']));
-	//Sanitizando os campos de nome e sobrenome
-	$nomeSanitize = filter_var($nome, FILTER_SANITIZE_STRING);
-	$sobrenomeSanitize = filter_var($sobrenome, FILTER_SANITIZE_STRING);
-	//Validando o campo de e-mail
-	$emailValidate = filter_var($email, FILTER_VALIDATE_EMAIL);
-	//CEP já está validando no código HTML na linha 49
-	//Fazendo o comando para o SQL
-	$sql="INSERT INTO usuario(nomeUsuario, sobrenomeUsuario, cepUsuario, emailUsuario, senhaUsuario) VALUES ('$nomeSanitize', '$sobrenomeSanitize', '$cep', '$emailValidate', '$senha')";
-	//Condição de que se foi enviado
-	if(mysqli_query($conexao, $sql)):
-		//Irá fazer a sessão da mensagem (Cadastrado com sucesso)
-		$_SESSION['mensagem'] = "Cadastro com sucesso!";
-		//E manda para o login
-		header('Location: login.php');
-	//Se não
-	else:
-		//Mostra a mensagem Erro ao cadastrar
-		$_SESSION['mensagem'] = "Erro ao cadastrar!";		
-	//Fecha os ifs
-	endif;
-endif;
-?>
-<!-- Criando o corpo da página-->
+<!-- Chamando o cabeçalho da página-->
 <?php include_once 'header.php';?>
-	<!-- Título com tamanho em h1-->
-	<h1>Cadastro de informações de usuário</h1>
-	<h2>Dados Pessoais</h2>
-	<!-- Abrindo um formulário para Cadastro-->
-	<form action="cadastro.php" method="POST">
-		<!-- Texto que aparece-->
-		<label for = "fname">Nome:</label>
-		<!-- Campo de digitação-->
-		<input type = "text" id = "fname" name = "nome" placeholder = "Digite seu nome"><br><br>
-		<!-- Texto que aparece-->
-		<label for = "lname"><br>Sobrenome:</label>
-		<!-- Campo de digitação-->
-		<input type = "text" id = "lname" name = "sobrenome" placeholder = "Digite seu sobrenome"><br><br>
-		<!-- Texto que aparece-->
-		<label for = "fdata"><br>Data de Nascimento</label>
-		<!--- Campo de Digitação-->
-		<input type = "date" id = "fdata" name = "data" placeholder = "Informe sua data de nascimento"><br><br>
-		<!-- Texto que aparece-->
-		<label for = "pwd"><br>Senha:</label>
-		<!-- Campo de digitação-->
-		<input type = "password" id = "pwd" name = "senha" minlength = "8" placeholder = "Digite uma senha"><br><br>
-		<h2>Dados de contato</h2>
-		<!-- Texto que aparece-->
-		<p>Preencha ao menos um tipo de contato: </p>
-		<!-- Texto que aparece-->
-		<label for = "email">E-mail:</label>
-		<!-- Campo de digitação-->
-		<input type = "email" id = "campo" name = "email"><br><br>
-		<!-- Texto que aparece-->
-		<label for = "numero">Número de celular:</label>
-		<!-- Campo de digitação-->
-		<input type = "tel" id = "campo" name = "numero"><br><br>
-		<!-- Texto que aparece-->
-		<label for = "facebook">Facebook:</label>
-		<!-- Campo de digitação -->
-		<input type = "text" id = "campo" name = "facebook"><br><br>
-		<!-- Texto que aparece -->
-		<label for = "instagram">Instagram:</label>
-		<!-- Campo de digitação -->
-		<input type = "text" id = "campo" name = "instagram"><br><br>
-		<!-- Texto que aparece -->
-		<label for = "telefone">Telefone:</label>
-		<!-- Campo de digitação -->
-		<input type = "tel" id = "campo" name = "telefone"><br><br><br><br>
-		<!-- Subtítulo com tamanho em h2-->
-		<h2>Dados de endereço</h2>
-		<!-- Texto que aparece -->
-		<label for = "
-	<!-- Fechando o formulário-->
-	</form>
-<!-- Chamando o rodapé-->
+	<!-- Criando o menu de notícias-->
+	<nav id="menu">
+		<!-- Título em tamanho h3-->
+		<h3>Notícias</h3>
+		<!-- Lista de notícias-->
+		<ul>
+			<!-- Notícia 1-->
+			<li><a href="https://www.msn.com/pt-br/noticias/brasil/anvisa-pro-c3-adbe-comercializa-c3-a7-c3-a3o-de-produtos-kinder-no-brasil/ar-AAWeYKm">Anvisa proíbe a comercialização de produtos da marca Kinder</a></li><br>
+			<!-- Notícia 2-->
+			<li><a href="https://cbn.globoradio.globo.com/media/audio/371414/medicamentos-podem-ficar-ate-10-mais-caros.htm#:~:text=Medicamentos%20podem%20ficar%20at%C3%A9%2010%25%20mais%20caros%20A,infla%C3%A7%C3%A3o%20do%20ano%20passado%2C%20que%20fechou%20em%2010%2C06%25.">Medicamentos ficarão mais caro, reajuste de 10%</a></li><br>
+			<!-- Notícia 3-->
+			<li><a href="https://ccnewsbrasil.com/publicacao/covid-vacina-da-janssen-recebe-registro-definitivo-da-anvisa-1649181455">Vacina da Janssen tem registro definitivo no Brasil</a></li><br>
+			<!-- Notícia 4-->
+			<li><a href="https://www.aarb.org.br/aprovada-regulamentacao-da-bula-de-remedios-digital/">Aprovada a regulamentação de bulas digitais de medicamentos</a></li><br>
+			<!-- Notícia 5-->
+			<li><a href="https://veja.abril.com.br/coluna/radar/depois-da-pandemia-venda-de-antigripais-cresce-94/">Venda de antigripais aumentou em 94%</a></li><br>
+			<!-- Notícia 6-->
+			<li><a href="https://oglobo.globo.com/saude/medicina/primeiro-remedio-para-apneia-do-sono-reduziu-em-ate-41-pausas-na-respiracao-durante-noite-mostra-estudo-25477402">Primeiro remédio para apneia do sono reduziu em até 41% pausas na respiração durante a noite</a></li><br>
+			<!-- Notícia 7-->
+			<li><a href="https://www.metropoles.com/distrito-federal/viagra-pacientes-com-hipertensao-sofrem-com-falta-de-remedio-no-df">Viagra: pacientes com hipertensão sofrem com falta de remédio no DF</a></li><br>
+			<!-- Notícia 8-->
+			<li><a href="https://www.minhavida.com.br/saude/noticias/27310-governo-muda-regras-para-venda-de-remedios-na-farmacia-popular">Governo muda regras para venda de remédios na Farmácia Popular</a></li><br>
+		<!-- Fechando a lista-->
+		</ul>
+	<!-- Fechando o menu notícias-->
+	</nav>
+	<!-- Criando o principal da página (o conteúdo)-->
+	<div id="contents"></div>
+		<!--Cria linha vertical-->
+		<div class="linha-vertical"></div>
+	<!--Cria linha vertical-->
+	<div class="linha-vertical"></div>
+	<!-- Criando a classe principal-->
+	<div class="principal">
+		<!-- Título em tamanho h2-->
+		<h2>Bem-vindo ao catálogo de medicamentos Ca'Med!</h2>
+		<!-- Subtítulo em tamanho h3-->
+		<h3>Qual o nosso objetivo?</h3>
+		<!-- Parágrafo-->
+		<p>
+		Nós, desenvolvedores do site da Ca'Med, buscamos facilitar a pesquisa por medicamentos e o acesso ao PMVC 
+		(preço máximo vendido ao consumidor) dos mesmos. Com a ajuda da nossa ferramenta, é possível encontrar remédios com ou sem receita, somente
+		pelos sintomas apresentados.
+		<!-- Fechando o parágrao-->
+		</p>
+		<!-- Abrindo um parágrafo para o campo de pesquisa-->
+		<p>
+		<center>
+			<div id="divBusca">
+				<img src="img/lupa.jpg" alt="Buscar"/>
+				<input type="text" id="txtBusca" placeholder="Pesquise um medicamento"/>
+				<input type = "submit" id = "btnBusca" name = "Buscar" value = "Buscar"><br><br>
+			</div>
+		</center>
+		<!-- Fechando o parágrafo e dando uma quebra de linha-->
+	<!-- Fechando a classe principal-->
+	</div>
+	<br>
+	<br>
+	<!-- Título em tamanho h3-->
+	<h3>Encontre aqui o seu medicamento somente pelo sintoma!</h3>
+	<!-- Criando a parte principal (link das páginas dos remédios de cada sintoma)-->
+	<nav id="sintomas">
+		<form action="home.php">
+			<label for="sintomas">Sintomas:</label>
+			<select name="sintomas" id="sintomas">
+				<option value="comando php">---</option>
+				<option value="comando php">---</option>
+				<option value="comando php">---</option>
+				<option value="comando php">---</option>
+			</select><br><br>
+			<input type="submit" value="Procurar">
+		</form>
+	<!-- Fechando a parte principal dos sintomas-->
+	</nav>
+	<!-- Abrindo parágrafo para imagem-->
+	<p>
+	<!-- Inserindo uma imagem-->
+	<img src="https://i.em.com.br/syYv68Iw3zLPaikC2_O-mv83NSQ=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2021/06/14/1276613/20210614155637767844a.png" alt="Sintomas" height="290px" width="500px">
+	<!-- Fechando o parágrafo-->
+	</p>
+<!-- Chamando o footer-->
 <?php include_once 'footer.php';?>

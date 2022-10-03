@@ -63,13 +63,19 @@
 	<h3>Encontre aqui o seu medicamento somente pelo sintoma!</h3>
 	<!-- Criando a parte principal (link das páginas dos remédios de cada sintoma)-->
 	<nav id="sintomas">
-		<form action="home.php">
+		<form action="exibirsintoma.php" method="post">
 			<label for="sintomas">Sintomas:</label>
 			<select name="sintomas" id="sintomas">
-				<option value="comando php">---</option>
-				<option value="comando php">---</option>
-				<option value="comando php">---</option>
-				<option value="comando php">---</option>
+				<option value="1">Febre</option>
+				<option value="2">Alergia</option>
+				<option value="3">Dor de Cabeça</option>
+				<option value="4">Dores Musculares</option>
+				<option value="5">Dores Instestinais</option>
+				<option value="6">Gases</option>
+				<option value="7">Vômito</option>
+				<option value="8">Diarréia</option>
+				<option value="9">Pressão</option>
+				<option value="10">Azia</option>
 			</select><br><br>
 			<input type="submit" value="Procurar">
 		</form>

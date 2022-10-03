@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Criando o Cabeçalho do código/página-->
+<!-- Criando o Cabeçalho do código/página -->
 <head>
 <?php
 	//Chamando a conexão com o banco de dados
@@ -24,36 +24,47 @@
 	}
 	*/
 ?>
-	<!-- Codificação (especificações da página)-->
-	<meta http-equiv="content-type" content="text/html; charset=utf-8 unicode_ci">
+	<!-- Codificação (especificações da página) -->
+	<meta http-equiv = "content-type" content = "text/html; charset=utf-8 unicode_ci">
 	<!-- Título da página-->
 	<title><?php echo $titulo;?></title>
+<<<<<<< HEAD
 	<!-- Chamando o css externo (para estilizar a página)-->
 	<link rel="stylesheet" href="CSS/estilo.css" type="text/css" media="screen">
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+=======
+	<!-- Chamando o css externo (para estilizar a página) -->
+	<link rel = "stylesheet" href = "CSS/estilo.css" type = "text/css" media = "screen">
+>>>>>>> 9897c761a664bbcbec4b27cfeef763c68bc3c8a6
 <!-- Fechando o cabeçalho-->
 </head>
-<!-- Criando o corpo da página-->
+<!-- Criando o corpo da página -->
 <body>
+<<<<<<< HEAD
 	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
 	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
 	<!-- Criando o cabeçalho da página-->
 	<header id="miniMenu">
 		<!-- Lista do conteúdo do cabeçalho-->
+=======
+	<!-- Criando o cabeçalho da página -->
+	<header id = "miniMenu">
+		<!-- Lista do conteúdo do cabeçalho -->
+>>>>>>> 9897c761a664bbcbec4b27cfeef763c68bc3c8a6
 		<ul>
 			<!-- Chamando e criando o botão da página home -->
-			<li><a href="home.php">Home</a></li>
-			<!-- Chamando e criando o botão da página de contato-->
-			<li><a href="contato.php">Contato</a></li>
-			<!-- Chamando e criando o botão da página de sobre-->
-			<li><a href="sobre.php">Sobre</a></li>
-			<!-- Chamando e criando o botão da página de consulta-->
-			<li><a href="consulta.php">Lista De Medicamentos</a></li>
-			<!-- Chamando e criando o botão da página de gerenciamento da conta-->
-			<li><a href="gerenciamentodeconta.php">Gerenciamento De Conta</a></li>
-		<!-- Fechando a lista-->
+			<li><a href = "home.php">Home</a></li>
+			<!-- Chamando e criando o botão da página de contato -->
+			<li><a href = "contato.php">Contato</a></li>
+			<!-- Chamando e criando o botão da página de sobre -->
+			<li><a href = "sobre.php">Sobre</a></li>
+			<!-- Chamando e criando o botão da página de consulta -->
+			<li><a href = "consulta.php">Lista De Medicamentos</a></li>
+			<!-- Chamando e criando o botão da página de gerenciamento da conta -->
+			<li><a href = "gerenciamentodeconta.php">Gerenciamento De Conta</a></li>
+		<!-- Fechando a lista -->
 		</ul>
-	<!-- Fechando o cabeçalho-->
+	<!-- Fechando o cabeçalho -->
 	</header>
 

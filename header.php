@@ -6,7 +6,7 @@
 	//Chamando a conexão com o banco de dados
 	require_once("conexao.php");
 	//Condição para não dar erro no session_start(), pois ele já inicia em outra página
-	/*if(session_status()=== PHP_SESSION_NONE){
+	/*if(session_status()=== PHP_SESSION_NONE) {
 			session_start();
 	}
 	//Condição para pegar o nome do usuário e guardar em uma variável

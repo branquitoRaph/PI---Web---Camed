@@ -21,7 +21,7 @@
 		$resultado = mysqli_fetch_array($query);
 		//Atribui o valor recebido (indíce 0) para a variável $titulo
 		$titulo = $resultado[0];	
-	}aaaaaaaaaaaaaaaaaaaa
+	}
 	*/
 ?>
 	<!-- Codificação (especificações da página) -->

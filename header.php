@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Criando o Cabeçalho do código/página-->
+<!-- Criando o Cabeçalho do código/página -->
 <head>
 <?php
 	//Chamando a conexão com o banco de dados
@@ -24,32 +24,32 @@
 	}
 	*/
 ?>
-	<!-- Codificação (especificações da página)-->
+	<!-- Codificação (especificações da página) -->
 	<meta http-equiv = "content-type" content = "text/html; charset=utf-8 unicode_ci">
 	<!-- Título da página-->
 	<title><?php echo $titulo;?></title>
-	<!-- Chamando o css externo (para estilizar a página)-->
+	<!-- Chamando o css externo (para estilizar a página) -->
 	<link rel = "stylesheet" href = "CSS/estilo.css" type = "text/css" media = "screen">
 <!-- Fechando o cabeçalho-->
 </head>
-<!-- Criando o corpo da página-->
+<!-- Criando o corpo da página -->
 <body>
-	<!-- Criando o cabeçalho da página-->
+	<!-- Criando o cabeçalho da página -->
 	<header id = "miniMenu">
-		<!-- Lista do conteúdo do cabeçalho-->
+		<!-- Lista do conteúdo do cabeçalho -->
 		<ul>
 			<!-- Chamando e criando o botão da página home -->
 			<li><a href = "home.php">Home</a></li>
-			<!-- Chamando e criando o botão da página de contato-->
+			<!-- Chamando e criando o botão da página de contato -->
 			<li><a href = "contato.php">Contato</a></li>
-			<!-- Chamando e criando o botão da página de sobre-->
+			<!-- Chamando e criando o botão da página de sobre -->
 			<li><a href = "sobre.php">Sobre</a></li>
-			<!-- Chamando e criando o botão da página de consulta-->
+			<!-- Chamando e criando o botão da página de consulta -->
 			<li><a href = "consulta.php">Lista De Medicamentos</a></li>
-			<!-- Chamando e criando o botão da página de gerenciamento da conta-->
+			<!-- Chamando e criando o botão da página de gerenciamento da conta -->
 			<li><a href = "gerenciamentodeconta.php">Gerenciamento De Conta</a></li>
-		<!-- Fechando a lista-->
+		<!-- Fechando a lista -->
 		</ul>
-	<!-- Fechando o cabeçalho-->
+	<!-- Fechando o cabeçalho -->
 	</header>
 

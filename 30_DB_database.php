@@ -1,7 +1,5 @@
 <?php
 	require_once '30_DB_config.php';
-	
-	
 	class Database{
 		private static $instance;
 		

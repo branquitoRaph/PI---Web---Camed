@@ -2,8 +2,6 @@
 	require_once '30_DB_config.php';
 	class Database{
 		private static $instance;
-		
-		
 		public static function getInstance(){
 			if (!isset(self::$instance)){
 				try{
@@ -13,14 +11,11 @@
 				}catch(PDOException $e){
 					echo $e->getMessage();
 				}
-				
 			}
 			return self::$instance;
 		}
-		
 		public static function prepare($sql){
 			return self::getInstance()->prepare($sql);
 		}
-		
 	}
 ?>
